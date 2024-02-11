@@ -5,20 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Love</title>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="/styles.css" />
 <body>
+  <div class="navbar">
+    <nav class="navbar bg-dark border-bottom border-body">
+      <form class="container-fluid justify-center ">
+        <button class="btn btn-outline-success me-2" type="button">2016</button>
+        <button type="button" class="btn btn-outline-warning me-2">Attraction</button>
+        <button type="button" class="btn btn-outline-primary me-2">2017</button>
+        <button type="button" class="btn btn-outline-info me-2">Distance</button>
+        <button type="button" class="btn btn-outline-secondary me-2">2018</button>
+        <button type="button" class="btn btn-outline-light me-2">Fight</button>
+        <button type="button" class="btn btn-outline-success me-2">2019</button>
+        <button type="button" class="btn btn-outline-danger me-2">Understaning</button>
+        <button type="button" class="btn btn-outline-warning me-2">2020</button>
+        <button type="button" class="btn btn-outline-primary me-2">True Love</button>
+        <button type="button" class="btn btn-outline-light me-2">2021</button>
+        <button type="button" class="btn btn-outline-warning me-2">Beliving</button>
+        <button type="button" class="btn btn-outline-info me-2">2022</button>
+        <button type="button" class="btn btn-outline-danger me-2">Importance</button>
+        <button type="button" class="btn btn-outline-light me-2">2023</button>
+        <button type="button" class="btn btn-outline-success me-2">Together</button>
+        <button type="button" class="btn btn-outline-warning me-2">2024</button>
+    </nav>
+  </div>
 
-  <script >
+  <div class="container">
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Thank You!</h5>
+              <p>For Always Being With me.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Thank You!</h5>
+              <p>For Always beliving in me.</p>.
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 >Thank You!</h5>
+              <p>For Always Supporting me.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  
+
+  </div>
+  <script>
     document.addEventListener('mousemove',function(e){
     let body=document.querySelector('body');
     let heart=document.createElement('span');
-    let x=e.offsetX;
+      let x=e.offsetX;
     let y=e.offsetY;
     heart.style.left=x+'px';
     heart.style.top = y+'px';
-
     let size=Math.random()*80;
-    
+
     heart.style.width=20 + size+ 'px';
     heart.style.height=20 + size+ 'px';
 
@@ -30,6 +96,11 @@
         heart.remove();
     },1000)
 })
-  </script>
+</script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
